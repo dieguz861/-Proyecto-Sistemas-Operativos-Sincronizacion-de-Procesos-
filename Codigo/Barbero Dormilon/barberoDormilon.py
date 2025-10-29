@@ -13,7 +13,7 @@ ESPERAS = 1 # usar múltiplo de random.random() para que CLIENTES lleguen.
 def espera(): # simula el arribo de CLIENTES a tiempo al azar.
 	time.sleep(ESPERAS * random.random())
 
-# ------------------ MÉTRICAS (mínima complejidad) ------------------
+# ------------------ MÉTRICAS ------------------
 t0 = time.perf_counter()     # inicio de la simulación
 served_count = 0             # atendidos (para throughput)
 total_wait_time = 0.0        # suma de esperas (para "tiempo de espera por recurso")
